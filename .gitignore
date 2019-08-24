@@ -1,0 +1,7 @@
+node_modules
+*.log
+dist
+.config
+.npm
+.vscode
+.bash_history
