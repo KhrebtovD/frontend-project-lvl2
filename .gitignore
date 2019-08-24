@@ -5,3 +5,4 @@ dist
 .npm
 .vscode
 .bash_history
+.DS_Store
