@@ -6,12 +6,19 @@ const data = {
   proxy: '123.234.53.22',
   follow: false,
 };
+const dataINI = {
+  host: 'hexlet.io',
+  timeout: '50',
+  proxy: '123.234.53.22',
+  follow: false,
+};
 
-test('parserJSON', () => {
-  console.log(parse(`${__dirname}/__fixtures__/before.json`));
-  expect(parse(`${__dirname}/__fixtures__/before.json`)).toEqual(data);
-});
-
-test('parserYAML', () => {
-  expect(parse(`${__dirname}/__fixtures__/before.yaml`)).toEqual(data);
-});
+test.each([
+  [`${__dirname}/__fixtures__/before.json`, data],
+  [`${__dirname}/__fixtures__/before.yaml`, data],
+  [`${__dirname}/__fixtures__/before.ini`, dataINI]])(
+  'parser %#',
+  (path, received) => {
+    expect(parse(path)).toEqual(received);
+  },
+);
