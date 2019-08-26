@@ -1,4 +1,4 @@
-import fs from 'fs';
+import parse from './parser';
 
 const makeSort = (a, b) => {
   const key1 = a[1][0];
@@ -29,10 +29,9 @@ const mergeIdenticProps = (array) => {
   return iter(array, []);
 };
 const genDiff = (pathToFile1, pathToFile2) => {
-  const getData = path => JSON.parse(fs.readFileSync(path, 'utf8'));
   const buildArray = (data, marker) => Object.entries(data).map(prop => [marker, ...prop]);
-  const data1 = buildArray(getData(pathToFile1), '-');
-  const data2 = buildArray(getData(pathToFile2), '+');
+  const data1 = buildArray(parse(pathToFile1), '-');
+  const data2 = buildArray(parse(pathToFile2), '+');
   const commonArr = [...data1, ...data2];
   const sortedWithIdentic = mergeIdenticProps(commonArr.sort(makeSort));
   const body = sortedWithIdentic

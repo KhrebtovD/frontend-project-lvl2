@@ -12,7 +12,7 @@ before_script:
 
 script:
   - make lint
-  - make test 
+  - npx jest --coverage
 
 after_script:
   - codeclimate-test-reporter < ./coverage/lcov.info

@@ -6,3 +6,5 @@
 [![Build Status](https://travis-ci.org/KhrebtovD/frontend-project-lvl2.svg?branch=master)](https://travis-ci.org/KhrebtovD/frontend-project-lvl2)
 
 [![asciicast](https://asciinema.org/a/b2MQrf7CTHp2w0KRzKlue3pWI.svg)](https://asciinema.org/a/b2MQrf7CTHp2w0KRzKlue3pWI)
+
+[![asciicast](https://asciinema.org/a/LL1vyub7REloytl3G7AXeUEcI.svg)](https://asciinema.org/a/LL1vyub7REloytl3G7AXeUEcI)
