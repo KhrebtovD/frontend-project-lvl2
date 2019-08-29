@@ -18,12 +18,13 @@ const types = [
   },
 ];
 
-const format = pathToFile => path.extname(pathToFile);
-const getType = pathToFile => types.find(({ name }) => name === format(pathToFile));
+const getFormat = pathToFile => path.extname(pathToFile);
+const getType = pathToFile => types.find(({ name }) => name === getFormat(pathToFile));
+const getData = pathToData => fs.readFileSync(pathToData, 'utf8');
 const parse = (pathToFile) => {
-  const data = pathToData => fs.readFileSync(pathToData, 'utf8');
   const { process } = getType(pathToFile);
-  return process(data(pathToFile));
+  const data = getData(pathToFile);
+  return process(data);
 };
 
 export default parse;
