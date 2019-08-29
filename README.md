@@ -14,3 +14,6 @@
 [![asciicast](https://asciinema.org/a/Khzo00trAdjad9mEqryrkjW7X.svg)](https://asciinema.org/a/Khzo00trAdjad9mEqryrkjW7X)
 
 [![asciicast](https://asciinema.org/a/L6RdDJMveqYnPAkBEKkDbgxfc.svg)](https://asciinema.org/a/L6RdDJMveqYnPAkBEKkDbgxfc)
+
+### Step 9
+[![asciicast](https://asciinema.org/a/jKec1NImndL4NmsxeangIwUOo.svg)](https://asciinema.org/a/jKec1NImndL4NmsxeangIwUOo)

@@ -1,7 +1,5 @@
 import _ from 'lodash';
 
-// const getTab = depth => ' '.repeat(2 * depth);
-
 const stringify = (value) => {
   switch (typeof value) {
     case 'string':
@@ -12,7 +10,6 @@ const stringify = (value) => {
       return value;
   }
 };
-
 
 const transformer = {
   node: ({ name, children }, path, fn) => {
